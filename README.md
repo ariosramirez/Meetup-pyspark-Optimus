@@ -8,13 +8,19 @@ Para esta demo vamos a necesitar tener instalado Docker.
 
 Luego de tener instalado Docker, para levantar el entorno de trabajo correr los siguientes comandos en una terminal de comandos:
 
+*Ve al directorio del repositorio*
+
 1. 
 ```bash
 docker build docker-anaconda-spark/. -t ariosds/spark-anaconda:demo
 ```
-2. 
+2.  
 ```bash
-docker run -it -v /Path/the/proyect:/Path -p 8888:8888 ariosds/spark-anaconda:demo jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root 
+export PATH_OPTIMUS_REPO=$PWD
+```
+3. 
+```bash
+docker run -it -v ${PATH_OPTIMUS_REPO}:/optimus_workshop -p 8888:8888 ariosds/spark-anaconda:demo jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root 
 ```
 Luego ir a su navegador y pegar el output de la corrida del contenedor de Docker.
 Ejemplo:
