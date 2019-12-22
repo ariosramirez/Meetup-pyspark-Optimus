@@ -16,7 +16,7 @@ Luego de tener instalado Docker, para levantar el entorno de trabajo correr los 
 
 1. 
 ```bash
-docker build docker-anaconda-spark/. -t ariosds/spark-anaconda:demo
+docker build . -t ariosds/spark-anaconda:demo
 ```
 2.  
 ```bash
