@@ -15,7 +15,7 @@ Luego de tener instalado Docker, para levantar el entorno de trabajo correr los 
 *Primero: Ve al directorio del repositorio*
 
 1. 
-```bash
+```bas
 docker build . -t ariosds/spark-anaconda:demo
 ```
 2.  
@@ -24,7 +24,7 @@ export PATH_OPTIMUS_REPO=$PWD
 ```
 3. 
 ```bash
-docker run -it -v ${PATH_OPTIMUS_REPO}:/optimus_workshop -p 8888:8888 ariosds/spark-anaconda:demo jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root 
+docker run -it -v ${PATH_OPTIMUS_REPO}:/optimus_workshop -p 8888:8888 ariosds/spark-anaconda:demo jupyter-lab --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' 
 ```
 Luego ir a su navegador y pegar el output de la corrida del contenedor de Docker.
 Ejemplo:
