@@ -1,6 +1,6 @@
 # Pasos para correr demo "Agile Data Science Workflows made easy with Pyspark"
 
-## Colab 
+## Colab \*in progress*
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1K9m7Kz616VG1XJkuateR5Udrr8FSIP3C)
 
 ## Local
@@ -12,7 +12,7 @@ Para esta demo vamos a necesitar tener instalado Docker.
 
 Luego de tener instalado Docker, para levantar el entorno de trabajo correr los siguientes comandos en una terminal de comandos:
 
-*Ve al directorio del repositorio*
+*Primero: Ve al directorio del repositorio*
 
 1. 
 ```bash
